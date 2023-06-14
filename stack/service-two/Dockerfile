@@ -1,4 +1,4 @@
-FROM python:slim
+FROM python:3-slim-bullseye
 
 COPY ./deps/*.whl ./
 RUN pip install *.whl && rm -rf *.whl
